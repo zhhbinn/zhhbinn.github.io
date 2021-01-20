@@ -7,10 +7,10 @@
   content: '';
   display: block;
   position: absolute;
-  top: 10px;
+  top: 6px;
   right: 12px;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   border-right: 1px solid #505d6b;
   border-bottom: 1px solid #505d6b;
   transform: rotate(-45deg);
@@ -25,11 +25,14 @@
 .clear-button {
   background: none !important;
   border: none !important;
+  outline: none;
 }
-.clear-button:active {
-  background: none !important;
-  border: none !important;
-}
+
 .clear-button svg {
   transform: scale(1) !important;
+}
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0 20px;
 }
