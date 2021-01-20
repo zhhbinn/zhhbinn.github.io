@@ -22,12 +22,13 @@
 
 <body>
   <div id="app"></div>
-  <script src="https://browser.sentry-cdn.com/4.4.2/bundle.min.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/bundle.min.js" crossorigin="anonymous"></script>
+
   <script>
     // Sentry.io
-    Sentry.init({
-      dsn: 'https://60f8b01c2f0b461a87e5c48f88778039@sentry.io/1367220'
-    });
+    // Sentry.init({
+    //   dsn: 'https://60f8b01c2f0b461a87e5c48f88778039@sentry.io/1367220'
+    // });
 
     // Docsify
     window.$docsify = {
@@ -39,7 +40,7 @@
         responsiveTables: true // default
       },
       loadSidebar: 'sidebar.md',
-
+      ga: 'UA-187734663-1',
       /*
       footer: {
         copy: '<span>Apache License 2.0 | &copy; 2015-2018</span>',
