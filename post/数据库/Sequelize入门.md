@@ -1,4 +1,4 @@
-# Sequelize 文档
+# Sequelize 入门
 
 > https://www.sequelize.com.cn/
 

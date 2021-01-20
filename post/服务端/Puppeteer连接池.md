@@ -1,3 +1,5 @@
+# Puppeteer 连接池
+
 > Puppeteer(中文翻译”木偶”)  是  Google Chrome  团队官方的无界面（Headless）Chrome  工具，它是一个  Node  库，提供了一个高级的  API  来控制  DevTools  协议上的无头版  Chrome 。也可以配置为使用完整（非无头）的  Chrome。
 >  generic-pool  资源池
 >   参考链接：
