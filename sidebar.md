@@ -1,17 +1,16 @@
-- [Introduction](README.md)
-- [Collection](Collection.md)
-- [Tools](Tools.md)
+- [关于](README.md)
 
 ---
 
+- **Vue**
+- **小程序**
+- **NodeJs**
 - **数据库**
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
-- **数据库 111**
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
-  - [Sequelize 文档](post/DataBase/Sequelize文档.md)
+  - [Sequelize 入门](post/DataBase/Sequelize入门.md)
+- **设计模式**
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ---
 

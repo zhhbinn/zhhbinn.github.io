@@ -22,3 +22,14 @@
 .sidebar-nav ul:not(.app-sub-sidebar) > li.collapse::before {
   transform: rotate(-45deg);
 }
+.clear-button {
+  background: none !important;
+  border: none !important;
+}
+.clear-button:active {
+  background: none !important;
+  border: none !important;
+}
+.clear-button svg {
+  transform: scale(1) !important;
+}

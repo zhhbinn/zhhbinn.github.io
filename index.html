@@ -16,9 +16,8 @@
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"
     title="Simple">
       -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki/assets/css/theme-defaults.css"
-    title="Simple">
 
 
   <!--<link rel="stylesheet" href="assets/css/theme-defaults.css" title="Simple"> -->
@@ -94,10 +93,21 @@
       ga: 'UA-152900803-1',
       search: {
         depth: 3,
-        noData: 'No results!',
-        placeholder: 'Search...'
+        noData: '没有结果',
+        placeholder: '搜索'
       },
-
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
 
 
     };
@@ -130,6 +140,8 @@
 
 
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
@@ -150,6 +162,9 @@
   <script src="//unpkg.com/prismjs/components/prism-cmake.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+
   <!-- flowchart requirements -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.0/flowchart.min.js"></script>
