@@ -1,4 +1,4 @@
-import sidebar from './sidebar';
+const sidebar = require('./sidebar');
 module.exports = {
   title: '一个好鱼',
   dest: 'dist',
@@ -14,7 +14,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    sidebarDepth: 4,
+    sidebarDepth: 3,
     searchMaxSuggestions: 10,
     smoothScroll: true,
     nextLinks: true,
