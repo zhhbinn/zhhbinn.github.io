@@ -73,7 +73,7 @@ module.exports = {
       {
         title: 'JavaScript', // 必要的
         collapsable: true, // 可选的, 默认值是 true,
-        children: [],
+        children: [['/posts/JavaScript/定时器管理池', '定时器管理池']],
       },
     ],
   },
