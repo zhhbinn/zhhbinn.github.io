@@ -44,15 +44,12 @@ module.exports = {
         children: [['/posts/服务端/Puppeteer连接池', 'Puppeteer连接池']],
       },
       {
-        title: '小程序', // 必要的
-        collapsable: true, // 可选的, 默认值是 true,
-        children: [['/posts/小程序/小程序的坑', '小程序的坑']],
-      },
-      {
         title: '移动端', // 必要的
         collapsable: true, // 可选的, 默认值是 true,
         children: [
-          ['/posts/移动端/微信H5开发中的一些问题', '微信H5开发中的一些问题'],
+          ['/posts/小程序/小程序的坑', '小程序的坑'][
+            ('/posts/移动端/微信H5开发中的一些问题', '微信H5开发中的一些问题')
+          ],
         ],
       },
       {
