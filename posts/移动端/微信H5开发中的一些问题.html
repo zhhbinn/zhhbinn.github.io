@@ -8,7 +8,7 @@
     
     <meta name="description" content="">
     
-    <link rel="preload" href="/assets/css/0.styles.5b4dd3e6.css" as="style"><link rel="preload" href="/assets/js/app.0a242e59.js" as="script"><link rel="preload" href="/assets/js/2.06d07068.js" as="script"><link rel="preload" href="/assets/js/13.2df28b62.js" as="script"><link rel="prefetch" href="/assets/js/10.5d625248.js"><link rel="prefetch" href="/assets/js/11.ca41c290.js"><link rel="prefetch" href="/assets/js/12.8e7ec02d.js"><link rel="prefetch" href="/assets/js/3.9d71db55.js"><link rel="prefetch" href="/assets/js/4.09b76e67.js"><link rel="prefetch" href="/assets/js/5.bf141d85.js"><link rel="prefetch" href="/assets/js/6.f561f13c.js"><link rel="prefetch" href="/assets/js/7.9ec12f52.js"><link rel="prefetch" href="/assets/js/8.340fb5db.js"><link rel="prefetch" href="/assets/js/9.ccc906fb.js">
+    <link rel="preload" href="/assets/css/0.styles.5b4dd3e6.css" as="style"><link rel="preload" href="/assets/js/app.ca4f7898.js" as="script"><link rel="preload" href="/assets/js/2.06d07068.js" as="script"><link rel="preload" href="/assets/js/14.114a8cfb.js" as="script"><link rel="prefetch" href="/assets/js/10.bd472a1c.js"><link rel="prefetch" href="/assets/js/11.9e8c3bd6.js"><link rel="prefetch" href="/assets/js/12.e674f683.js"><link rel="prefetch" href="/assets/js/13.9bbe325a.js"><link rel="prefetch" href="/assets/js/3.ec67c758.js"><link rel="prefetch" href="/assets/js/4.09b76e67.js"><link rel="prefetch" href="/assets/js/5.bf141d85.js"><link rel="prefetch" href="/assets/js/6.f561f13c.js"><link rel="prefetch" href="/assets/js/7.66f61758.js"><link rel="prefetch" href="/assets/js/8.4b6d7937.js"><link rel="prefetch" href="/assets/js/9.f6942b24.js">
     <link rel="stylesheet" href="/assets/css/0.styles.5b4dd3e6.css">
   </head>
   <body>
@@ -37,11 +37,15 @@
     <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><p>实际上，这个方案是可行的，但是因为对于 iOS 设备，并非使用 router 的 next()方法，所以在使用后退键时会出现一些页面的生命周期不会触发。所以只能放弃这个方案。</p> <p>最后我采用了一个比较“丑陋”的解决方法解决了这个问题。使用一个全局变量，在 router.afterEach 中，对 iOS 设备的当前路径做了一个记录。然后在微信 js-sdk 获取签名时，取相应的这个全局变量。</p> <p>这次项目的搭建开发过程中，在这两个坑上花的时间很多，所以做了一点记录，比起小程序的开发，微信网页端的一些设计并不是很友好，比如网页登录授权的过程以及一次性订阅消息的订阅过程。同时，发现了 vue-router 没有相关的 API 可以发挥小程序中的<code>wx.repalce</code>的相同作用，有的页面并不想提供后退功能，但是暂时找不到可行的方案。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/4/2021, 4:03:26 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>实际上，这个方案是可行的，但是因为对于 iOS 设备，并非使用 router 的 next()方法，所以在使用后退键时会出现一些页面的生命周期不会触发。所以只能放弃这个方案。</p> <p>最后我采用了一个比较“丑陋”的解决方法解决了这个问题。使用一个全局变量，在 router.afterEach 中，对 iOS 设备的当前路径做了一个记录。然后在微信 js-sdk 获取签名时，取相应的这个全局变量。</p> <p>这次项目的搭建开发过程中，在这两个坑上花的时间很多，所以做了一点记录，比起小程序的开发，微信网页端的一些设计并不是很友好，比如网页登录授权的过程以及一次性订阅消息的订阅过程。同时，发现了 vue-router 没有相关的 API 可以发挥小程序中的<code>wx.repalce</code>的相同作用，有的页面并不想提供后退功能，但是暂时找不到可行的方案。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/4/2021, 4:25:32 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/posts/小程序/小程序的坑.html" class="prev">
         小程序的坑
-      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/assets/js/app.0a242e59.js" defer></script><script src="/assets/js/2.06d07068.js" defer></script><script src="/assets/js/13.2df28b62.js" defer></script>
+      </a></span> <span class="next"><a href="/posts/JavaScript/定时器管理池.html">
+        定时器管理池
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.ca4f7898.js" defer></script><script src="/assets/js/2.06d07068.js" defer></script><script src="/assets/js/14.114a8cfb.js" defer></script>
   </body>
 </html>
