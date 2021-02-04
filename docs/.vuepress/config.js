@@ -41,7 +41,11 @@ module.exports = {
       {
         title: '服务端', // 必要的
         collapsable: true, // 可选的, 默认值是 true,
-        children: [['/posts/服务端/Puppeteer连接池', 'Puppeteer连接池']],
+        children: [
+          ['/posts/服务端/Puppeteer连接池', 'Puppeteer连接池'],
+          ['/posts/服务端/Jenkins自动化部署Egg.js', 'Jenkins自动化部署Egg.js'],
+          ['/posts/服务端/nginx的基本操作', 'nginx的基本操作'],
+        ],
       },
       {
         title: '移动端', // 必要的
