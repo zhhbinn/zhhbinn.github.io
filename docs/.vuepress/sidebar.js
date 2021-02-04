@@ -35,18 +35,22 @@ module.exports = [
     children: [],
   },
   {
-    title: 'HTML',
+    title: 'HTML&CSS',
     collapsable: true,
-    children: [],
+    children: [["/posts/HTML&CSS/HTML's points", "HTML's points"]],
   },
-  {
-    title: 'CSS',
-    collapsable: true,
-    children: [],
-  },
+
   {
     title: 'JavaScript',
     collapsable: true,
-    children: [['/posts/JavaScript/定时器管理池', '定时器管理池']],
+    children: [
+      ['/posts/JavaScript/定时器管理池', '定时器管理池'],
+      ["/posts/JavaScript/JS's points", "JS's points"],
+    ],
+  },
+  {
+    title: '计基',
+    collapsable: true,
+    children: [['/posts/计基/握手与挥手', '握手与挥手']],
   },
 ];
