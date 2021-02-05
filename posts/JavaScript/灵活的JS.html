@@ -8,7 +8,7 @@
     
     <meta name="description" content="">
     
-    <link rel="preload" href="/assets/css/0.styles.5b4dd3e6.css" as="style"><link rel="preload" href="/assets/js/app.3652bb8f.js" as="script"><link rel="preload" href="/assets/js/2.06d07068.js" as="script"><link rel="preload" href="/assets/js/23.abdc9cc4.js" as="script"><link rel="prefetch" href="/assets/js/10.fd62f198.js"><link rel="prefetch" href="/assets/js/11.5db4f739.js"><link rel="prefetch" href="/assets/js/12.f23477d0.js"><link rel="prefetch" href="/assets/js/13.dbe7be3f.js"><link rel="prefetch" href="/assets/js/14.fa8aeba9.js"><link rel="prefetch" href="/assets/js/15.dee65fb7.js"><link rel="prefetch" href="/assets/js/16.827854a8.js"><link rel="prefetch" href="/assets/js/17.e8432992.js"><link rel="prefetch" href="/assets/js/18.181912a2.js"><link rel="prefetch" href="/assets/js/19.1ac989e6.js"><link rel="prefetch" href="/assets/js/20.ea2ba5fd.js"><link rel="prefetch" href="/assets/js/21.2c7264fc.js"><link rel="prefetch" href="/assets/js/22.e28f9ddc.js"><link rel="prefetch" href="/assets/js/3.a363de60.js"><link rel="prefetch" href="/assets/js/4.09b76e67.js"><link rel="prefetch" href="/assets/js/5.bf141d85.js"><link rel="prefetch" href="/assets/js/6.f561f13c.js"><link rel="prefetch" href="/assets/js/7.5158432f.js"><link rel="prefetch" href="/assets/js/8.6752010d.js"><link rel="prefetch" href="/assets/js/9.74827d28.js">
+    <link rel="preload" href="/assets/css/0.styles.5b4dd3e6.css" as="style"><link rel="preload" href="/assets/js/app.66f2663c.js" as="script"><link rel="preload" href="/assets/js/2.06d07068.js" as="script"><link rel="preload" href="/assets/js/14.f7f5f1a0.js" as="script"><link rel="prefetch" href="/assets/js/10.7f40168b.js"><link rel="prefetch" href="/assets/js/11.1d1fc28d.js"><link rel="prefetch" href="/assets/js/12.5bb7c8cb.js"><link rel="prefetch" href="/assets/js/13.06f5020b.js"><link rel="prefetch" href="/assets/js/15.84ed6e71.js"><link rel="prefetch" href="/assets/js/16.5bcec652.js"><link rel="prefetch" href="/assets/js/17.e8a0921a.js"><link rel="prefetch" href="/assets/js/18.2132d5bc.js"><link rel="prefetch" href="/assets/js/19.92392730.js"><link rel="prefetch" href="/assets/js/20.dc72bc55.js"><link rel="prefetch" href="/assets/js/21.803fce74.js"><link rel="prefetch" href="/assets/js/22.71b7f018.js"><link rel="prefetch" href="/assets/js/23.60521d63.js"><link rel="prefetch" href="/assets/js/24.19172498.js"><link rel="prefetch" href="/assets/js/25.2a6ca2c6.js"><link rel="prefetch" href="/assets/js/26.deff006b.js"><link rel="prefetch" href="/assets/js/27.ceddcd2c.js"><link rel="prefetch" href="/assets/js/3.4b86a39b.js"><link rel="prefetch" href="/assets/js/4.09b76e67.js"><link rel="prefetch" href="/assets/js/5.bf141d85.js"><link rel="prefetch" href="/assets/js/6.f561f13c.js"><link rel="prefetch" href="/assets/js/7.5158432f.js"><link rel="prefetch" href="/assets/js/8.6752010d.js"><link rel="prefetch" href="/assets/js/9.29aac6e6.js">
     <link rel="stylesheet" href="/assets/css/0.styles.5b4dd3e6.css">
   </head>
   <body>
@@ -37,62 +37,52 @@ CheckObject<span class="token punctuation">.</span><span class="token function">
 CheckObject<span class="token punctuation">.</span><span class="token function-variable function">checkName</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 CheckObject<span class="token punctuation">.</span><span class="token function-variable function">checkEmail</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language- extra-class"><pre><code>这个对象是不能复制的，或者说这个对象类在用new关键字创建新的对象时，新创建的对象是不能继承这些方法的。
-</code></pre></div><h3 id="真假对象"><a href="#真假对象" class="header-anchor">#</a> 真假对象</h3> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token punctuation">{</span>
-            <span class="token function-variable function">checkName</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token function-variable function">checkEmail</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">var</span> a<span class="token operator">=</span><span class="token function">CheckObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    a<span class="token punctuation">.</span><span class="token function">checkName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language- extra-class"><pre><code>当每次调用这个函数的时候，把里层的对象返回出来。这不是一个真正意义上类的创建方式，并且创建的对象a和对象CheckObject没有任何关系。
-</code></pre></div><h3 id="类"><a href="#类" class="header-anchor">#</a> 类</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</code></pre></div><p>这个对象是不能复制的，或者说这个对象类在用 new 关键字创建新的对象时，新创建的对象是不能继承这些方法的。</p> <h3 id="真假对象"><a href="#真假对象" class="header-anchor">#</a> 真假对象</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">checkName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">checkEmail</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">CheckObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+a<span class="token punctuation">.</span><span class="token function">checkName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>当每次调用这个函数的时候，把里层的对象返回出来。这不是一个真正意义上类的创建方式，并且创建的对象 a 和对象 CheckObject 没有任何关系。</p> <h3 id="类"><a href="#类" class="header-anchor">#</a> 类</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">checkName</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">checkEmail</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CheckObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 a<span class="token punctuation">.</span><span class="token function">checkName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language- extra-class"><pre><code>每次对类实例化，都会有一套属于自己的方法。因为所有的方法都在函数内部，通过this定义，所以每次通过new关键字创建新对象的时候,新创建的对象都会对类的this上的属性进行复制，所以这些新创建的对象都会有自己的一套方法，不过有时候这么做造成的消耗是很奢侈的。
-所以应该改进一下：
-</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</code></pre></div><p>每次对类实例化，都会有一套属于自己的方法。因为所有的方法都在函数内部，通过 this 定义，所以每次通过 new 关键字创建新对象的时候,新创建的对象都会对类的 this 上的属性进行复制，所以这些新创建的对象都会有自己的一套方法，不过有时候这么做造成的消耗是很奢侈的。</p> <p>所以应该改进一下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token class-name">CheckObject</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">checkName</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token class-name">CheckObject</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">checkEmail</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language- extra-class"><pre><code>这样创建对象实例的时候，创建出来的对象所拥有的方法就都是一个了，因为它们都要以来prototype原型一次寻找，而找到的方法都是同一个，他们都绑在CheckObject的原型上。
+</code></pre></div><p>这样创建对象实例的时候，创建出来的对象所拥有的方法就都是一个了，因为它们都要以来 prototype 原型一次寻找，而找到的方法都是同一个，他们都绑在 CheckObject 的原型上。</p> <p>简写：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">CheckObject</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">checkName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">checkEmail</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="方法的另一种使用方法-链式调用"><a href="#方法的另一种使用方法-链式调用" class="header-anchor">#</a> 方法的另一种使用方法（链式调用）</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> CheckObject <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">checkName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">checkEmail</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-简写：
-</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>    <span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token class-name">CheckObject</span><span class="token punctuation">.</span>prototype<span class="token operator">=</span><span class="token punctuation">{</span>
-            <span class="token function-variable function">checkName</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
-            <span class="token function-variable function">checkEmail</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-</code></pre></div><h3 id="方法的另一种使用方法-链式调用"><a href="#方法的另一种使用方法-链式调用" class="header-anchor">#</a> 方法的另一种使用方法（链式调用）</h3> <div class="language- extra-class"><pre class="language-text"><code>    var CheckObject={
-        checkName:function(){
-            return this;
-        }
-        checkEmail:function(){
-            return this;
-        }
-    }
-
-    CheckObject.checkName().checkEmail();
-</code></pre></div><div class="language- extra-class"><pre><code>同样的方式也可以用到类的原型当中：
-</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>    var CheckObject=function(){
-        CheckObject.prototype={
-            checkName:function(){
-                return this;
-            }
-            checkEmail:function(){
-                return this;
-            }
-        }
-    }
-
+CheckObject<span class="token punctuation">.</span><span class="token function">checkName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">checkEmail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>同样的方式也可以用到类的原型当中：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">CheckObject</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">CheckObject</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">checkName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">checkEmail</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/assets/js/app.3652bb8f.js" defer></script><script src="/assets/js/2.06d07068.js" defer></script><script src="/assets/js/23.abdc9cc4.js" defer></script>
+    <script src="/assets/js/app.66f2663c.js" defer></script><script src="/assets/js/2.06d07068.js" defer></script><script src="/assets/js/14.f7f5f1a0.js" defer></script>
   </body>
 </html>
