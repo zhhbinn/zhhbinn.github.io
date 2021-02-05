@@ -27,6 +27,8 @@ module.exports = [
     children: [
       ['/posts/移动端/小程序的坑', '小程序的坑'],
       ['/posts/移动端/微信H5开发中的一些问题', '微信H5开发中的一些问题'],
+      ['/posts/移动端/视口', '视口'],
+      ['/posts/移动端/视口', '视口'],
     ],
   },
   {
@@ -46,6 +48,8 @@ module.exports = [
     children: [
       ['/posts/JavaScript/定时器管理池', '定时器管理池'],
       ["/posts/JavaScript/JS's points", "JS's points"],
+      ['/posts/JavaScript/导入和导出', '导入和导出'],
+      ['/posts/JavaScript/Worker', 'Worker'],
     ],
   },
   {

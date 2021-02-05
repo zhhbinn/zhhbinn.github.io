@@ -27,3 +27,11 @@ module.exports = {
     sidebar,
   },
 };
+var CheckObject=function(){
+  return {
+  checkName:function(){},
+  checkEmail:function(){}
+  }
+  }
+  var a=CheckObject();
+  a.checkName(){};
