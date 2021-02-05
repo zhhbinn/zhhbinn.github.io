@@ -28,7 +28,6 @@ module.exports = [
       ['/posts/移动端/小程序的坑', '小程序的坑'],
       ['/posts/移动端/微信H5开发中的一些问题', '微信H5开发中的一些问题'],
       ['/posts/移动端/视口', '视口'],
-      ['/posts/移动端/视口', '视口'],
     ],
   },
   {
@@ -55,6 +54,9 @@ module.exports = [
   {
     title: '计基',
     collapsable: true,
-    children: [['/posts/计基/握手与挥手', '握手与挥手']],
+    children: [
+      ['/posts/计基/握手与挥手', '握手与挥手'],
+      ['/posts/计基/如何节省一次OPTIONS请求', '如何节省一次OPTIONS请求'],
+    ],
   },
 ];
