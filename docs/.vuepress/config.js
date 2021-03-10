@@ -14,6 +14,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    lastUpdated: 'Last Updated', // string | boolean
     sidebarDepth: 3,
     searchMaxSuggestions: 10,
     smoothScroll: true,
