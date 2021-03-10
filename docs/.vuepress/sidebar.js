@@ -10,6 +10,7 @@ module.exports = [
     children: [
       ['/posts/数据库/Mongoose的聚合函数', 'Mongoose的聚合函数'],
       ['/posts/数据库/Sequelize入门', 'Sequelize入门'],
+      ['/posts/数据库/Sequelize的关联查询', 'Sequelize的关联查询'],
     ],
   },
   {
